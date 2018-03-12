@@ -1,0 +1,3 @@
+public enum SportType {
+    SKI, PARASHUTING,MOUNTAINBIKE,KIAYKI
+}
