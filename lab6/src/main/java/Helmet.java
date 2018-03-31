@@ -22,4 +22,12 @@ public class Helmet extends Equipment{
                 super.toString() +
                 "}\n";
     }
+
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + "," + "size";
+    }
+    public String toCSV(){
+        return super.toCSV() + getSize();
+    }
 }

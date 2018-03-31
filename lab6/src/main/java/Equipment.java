@@ -1,4 +1,4 @@
-import java.util.Comparator;
+
 
 public class Equipment {
 
@@ -7,10 +7,18 @@ public class Equipment {
     private SportType type;
 
 
-    public Equipment( String ProduceName , double weight, SportType type ){
-        this.ProduceName=ProduceName;
+    public Equipment( String produceName , double weight, SportType type ){
+        this.ProduceName=produceName;
         this.weight=weight;
         this.type = type;
+    }
+
+    public String getHeaders(){
+        return "Equipment:" + "produceName" + ", " + "weight" + ", " + "type";
+    }
+
+    public String toCSV(){
+        return "Equipment:" + getProduceName() + ", " + getWeight() + ", " + getSportType();
     }
 
 

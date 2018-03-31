@@ -24,4 +24,10 @@ public class EquipManager {
         }
         return result;
     }
+
+    public void printList() {
+        for(Equipment eq : listEquipment) {
+            System.out.println(eq.toString());
+        }
+    }
 }

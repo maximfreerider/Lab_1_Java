@@ -31,20 +31,16 @@ public class EquipManagerTest {
         manager.sortByWeight(listEquipment);
         double weightByPrevious = 0;
         for (Equipment equipment : listEquipment) {
-            if (equipment.getWeight() > weightByPrevious) {
-                assertTrue(true);
-            }
+            assertTrue((equipment.getWeight() > weightByPrevious));
         }
     }
 
     @Test
     public void findBySportTypeTest(){
-       manager.findBySportType(listEquipment,SportType.MOUNTAINBIKE);
+       List<Equipment> result = manager.findBySportType(listEquipment,SportType.MOUNTAINBIKE);
        //дізнвтися про foreach
-        for (Equipment equipment : listEquipment) {
-            if (equipment.getSportType().equals(SportType.MOUNTAINBIKE)){
-                assertTrue(true);
-            }
+        for (Equipment equipment : result) {
+            assertEquals(SportType.MOUNTAINBIKE, equipment.getSportType());
         }
     }
 }

@@ -33,5 +33,13 @@ public class Bike extends Equipment {
                 super.toString() +
                 "}\n";
     }
+
+    @Override
+    public String getHeaders() {
+        return super.getHeaders()+ "," + "gearsOfNumber" + "," + "numberOfBreak";
+    }
+    public String toCSV(){
+        return super.toCSV() + getGearsNumber() + getNumberOfBrake();
+    }
 }
 

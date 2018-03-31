@@ -57,4 +57,12 @@ public class Boat extends Equipment {
                 "}\n";
     }
 
+    @Override
+    public String getHeaders() {
+        return super.getHeaders()+ "," + "peopleCount" + "," + "vesla" + "," + "chairs" + "," + "vest";
+    }
+    public String toCSV(){
+        return super.toCSV() + getPeopleCount() + getVesla() + getVest() + getChairs();
+    }
+
 }
