@@ -30,6 +30,9 @@ public class EquipManager {
             }
         }
         return sortByWeight(result);
+
+        for(int my_number =0, i<number_list.size(), my_number++){}
+        for(int my_number : number_list){}
     }
 }
 
