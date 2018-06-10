@@ -26,14 +26,14 @@ public class ChildrensCircle {
         System.out.println("Total number of children " + (girls + boys));
     }
 
-    public void resetValues(int teachers,int ageOfChildren, int boys,int girls,int balls ){
+    public void resetValues(int teachers, int ageOfChildren, int boys, int girls, int balls ){
         this.teachers = teachers;
         this.ageOfChildren = ageOfChildren;
         this.boys = boys;
         this.girls = girls;
         this.balls = balls;
 
-        setNumberOfChildren(boys+girls);
+        setNumberOfChildren(boys + girls);
     }
 
 
@@ -45,11 +45,11 @@ public class ChildrensCircle {
            girls = 15;
            balls = 6;
 
-           setNumberOfChildren(boys+girls);
+           setNumberOfChildren(boys + girls);
 
        }
 
-        public ChildrensCircle(int teachers,int ageOfChildren, int boys, int girls){
+        public ChildrensCircle(int teachers, int ageOfChildren, int boys, int girls){
           this.teachers = teachers;
           this.ageOfChildren = ageOfChildren;
           this.boys =  boys;
@@ -59,7 +59,7 @@ public class ChildrensCircle {
             setNumberOfChildren(boys+girls);
         }
 
-        public  ChildrensCircle(int teachers,int ageOfChildren, int boys,int girls,int balls ){
+        public  ChildrensCircle(int teachers, int ageOfChildren, int boys, int girls, int balls ){
           this.teachers = teachers;
           this.ageOfChildren = ageOfChildren;
           this.boys = boys;
